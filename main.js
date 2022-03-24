@@ -19,4 +19,17 @@ function modelloded() {
 }
 function speak() {
     var synth = window.speachSynthesis;
+    speak1 = "prediction 1 is" + prediction_1;
+    speak2 = "prediction 2 is" + prediction_2;
+    var say = new SpeechSynthesisUtterance(speak1 + speak2);
+    synth.speak(say);
+}
+
+function check() {
+    img = document.getElementById("captured_image");
+    identify.classify(img, list);
+}
+
+function list() {
+
 }
